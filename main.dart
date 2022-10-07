@@ -42,18 +42,3 @@ class MyApp extends StatelessWidget {
 }
 
 
-// main() {
-//   runApp(MyApp());
-// }
-
-// class MyApp extends StatelessElement {
-//   Widget build(BuildContext context) {
-//     return MaterialApp(
-//       home: Scaffold(
-//         appBar: AppBar(
-//           title: Text("Column"),
-//         ),
-//       ),
-//     );
-//   }
-// }
