@@ -9,8 +9,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        appBar: AppBar(title: Text("List View")),
+        appBar: AppBar(
+          title: Text("List View"),
+        ),
         body: ListView(
+          //scrollDirection: Axis.horizontal,
           children: [
             Container(
               height: 300,
