@@ -1,27 +1,30 @@
-import 'package:flutter/material.dart';
 import 'package:faker/faker.dart';
+import 'package:flutter/material.dart';
 
-void main() => runApp(MyApp());
+void main() {
+  runApp(MyApp());
+}
 
 class MyApp extends StatelessWidget {
+  var faker = new Faker();
   @override
   Widget build(BuildContext context) {
-    var faker = new Faker();
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          title: Text("Extract Widget"),
+          title: Text('Extract Widget'),
         ),
         body: ListView.builder(
-            itemCount: 100,
-            itemBuilder: (context, index) {
-              return ChatItem(
-                imageUrl: "https://picsum.photos/id/$index/200/300",
-                title: faker.person.name(),
-                subtitle: faker.lorem.sentence(),
-              );
-            }),
+          itemCount: 100,
+          itemBuilder: (contex, index) {
+            return ChatItem(
+              imageUrl: "https://picsum.photos/id/$index/200/300",
+              title: faker.person.name(),
+              subtitle: faker.lorem.sentence(),
+            );
+          },
+        ),
       ),
     );
   }
@@ -31,8 +34,11 @@ class ChatItem extends StatelessWidget {
   final String? imageUrl;
   final String? title;
   final String? subtitle;
-
-  ChatItem({this.imageUrl, this.title, this.subtitle});
+  ChatItem({
+    this.imageUrl,
+    this.title,
+    this.subtitle,
+  });
 
   @override
   Widget build(BuildContext context) {
