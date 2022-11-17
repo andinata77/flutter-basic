@@ -30,7 +30,7 @@ class MyApp extends StatelessWidget {
             ),
             Container(
               width: 50,
-              // height: 10000,  akan menyesuaikan
+              // height: 10000,  akan menyesuaikanada
               color: Colors.black,
             ),
             Container(
