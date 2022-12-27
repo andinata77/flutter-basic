@@ -21,7 +21,7 @@ class Products with ChangeNotifier {
     return [..._allproducts];
   }
 
-  Product findById(productId) {
+  Product findById(String productId) {
     return _allproducts.firstWhere((prodId) => prodId.id == productId);
   }
   // void addProduct() {
