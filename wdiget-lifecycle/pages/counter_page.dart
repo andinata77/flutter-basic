@@ -19,7 +19,7 @@ class _CounterPageState extends State<CounterPage> {
 
   @override
   void didChangeDependencies() {
-    int numberState = ModalRoute.of(context)!.settings.arguments as int;
+    final int? numberState = ModalRoute.of(context)!.settings.arguments as int?;
     if (numberState != null) {
       counter = numberState;
     }
