@@ -35,7 +35,7 @@ class _EditState extends State<Edit> {
           //you have to take the ip address of your computer.
           //because using localhost will cause an error
           //get detail data with id
-          "http://192.168.137.1/flutter/crud-flutter/detail.php?id='${widget.id}'"));
+          "http://192.xxx.xxx.x/flutter/crud-flutter/detail.php?id='${widget.id}'"));
 
       // if response successful
       if (response.statusCode == 200) {
@@ -54,7 +54,7 @@ class _EditState extends State<Edit> {
   Future _onUpdate(context) async {
     try {
       return await http.post(
-        Uri.parse("http://192.168.137.1/flutter/crud-flutter/update.php"),
+        Uri.parse("http://192.xxx.xxx.x/flutter/crud-flutter/update.php"),
         body: {
           "id": widget.id,
           "title": title.text,
@@ -77,7 +77,7 @@ class _EditState extends State<Edit> {
   Future _onDelete(context) async {
     try {
       return await http.post(
-        Uri.parse("http://192.168.137.1/flutter/crud-flutter/delete.php"),
+        Uri.parse("http://192.xxx.xxx.x/flutter/crud-flutter/delete.php"),
         body: {
           "id": widget.id,
         },
