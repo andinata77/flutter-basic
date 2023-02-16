@@ -22,7 +22,7 @@ class _AddState extends State<Add> {
   Future _onSubmit() async {
     try {
       return await http.post(
-        Uri.parse("http://192.168.137.1/flutter/crud-flutter/create.php"),
+        Uri.parse("http://192.xxx.xxx.x/flutter/crud-flutter/create.php"),
         body: {
           "title": title.text,
           "content": content.text,
