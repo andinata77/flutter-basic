@@ -1,0 +1,3 @@
+Buka file pubspec.yaml. 
+Lalu tambahkan library flutter_staggered_grid_view: ^0.6.1 (sesuai versi masing2)
+dan http: ^0.13.4 kemudian tekan ctrl + s untuk mendownload library yang dibutuhkan.
