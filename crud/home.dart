@@ -38,7 +38,7 @@ class HomeState extends State<Home> {
       final response = await http.get(Uri.parse(
           //you have to take the ip address of your computer.
           //because using localhost will cause an error
-          "http://192.168.137.1/flutter/crud-flutter/list.php"));
+          "http://192.xxx.xxx.x/flutter/crud-flutter/list.php"));
 
       // if response successful
       if (response.statusCode == 200) {
