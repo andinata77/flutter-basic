@@ -2,7 +2,7 @@
 $connection = new mysqli("localhost", "root", "", "db_crud_flutter");
 $title = $_POST['title'];
 $content = $_POST['content'];
-$date = $_POST['Y-m-d'];
+$date = date('Y-m-d');
 
 $result = mysqli_query($connection, "INSERT INTO tb_note_app set title ='$title', content='$content', date='$date'");
 
