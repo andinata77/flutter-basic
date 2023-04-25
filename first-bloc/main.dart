@@ -25,6 +25,12 @@ class _HomePageState extends State<HomePage> {
   CounterBloc bloc = CounterBloc();
 
   @override
+  void dispose() {
+    bloc.dispose();
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
